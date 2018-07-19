@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>V jobs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--Navbar, barra de cima-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img height="60" src="Images/logo-h-vjobs.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" >
+                <li class="nav-item ">
+                    <a class="nav-link" style="color: royalblue" href="#">Vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:royalblue" href="#">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <!--Conteiner para fazer a grid-->
+    <div class="container mt-2 " > 
+        <!--Botão
+            Usar a tag "mb-" ou "mt-" para adicionar margin botton ou margin top
+            Para fazer a ação "Collapse" do Formulario é preciso adicionar alguns lementos no botão-->
+        <button type="button" class="btn btn-primary mb-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Nova Vaga</button>
+        <!--Classe para collapse, quando o botão for acionado, tudo desta div irá aparecer-->
+        <div class="collapse" id="collapseExample">
+        <!--Formulário-->
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputName">Nome</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                </div>
+
+                <!--Classe "textarea" serve para colocar quantas rows se quer adicionar a uma caixa de texto-->
+                <!--Descrição-->    
+                <div class="form-group">
+                    <label for="inputDescription">Descrição</label>
+                    <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+                </div>
+                <div class="form-row">
+                    <!--Habilidades-->
+                    <div class="form-group col-md-6">
+                        <label for="inputHabilities">Habilidades</label>
+                        <textarea class="form-control" id="inputHabilities" rows="3"></textarea>
+                    </div>
+                    <!--Competencias-->
+                    <div class="form-group col-md-6">
+                            <label for="inputCompetencias">Competencias</label>
+                            <textarea class="form-control" id="inputCompetencias" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <!--Sálario Base-->
+                    <div class="form-group col-md-6">
+                        <label for="inputSalary">Salário Base</label>
+                        <input class="form-control" id="inputSalary"></input>
+                    </div>
+                    <!--Área-->
+                    <div class="form-group col-md-6">
+                        <label for="inputArea">Área</label>
+                        <select id="inputArea" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Check Box-->
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Vaga para PDC
+                        </label>
+                    </div>
+                </div>
+                <!--Botão Criar Vaga-->
+                <button type="button" class="btn btn-primary mb-2">Criar Vaga</button>
+                </form>
+        </div>
+
+        
+        <!--Card board-->
+        <!--Card 1-->
+        <div class="row">
+            <div class="col">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="Images/developer.png" >
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor front-end</h5>
+                        <p class="card-text">
+                            <h6>Descrição:</h6>
+                            <div>
+                                Proficional que goste de trabalhar em um ambiente dinâmico com desenvolvimento de software e que tenha experiencia em desenvolvimento full stak.
+                            </div>    
+                            <br>
+                            <h6>Salário:</h6>
+                            <div>R$ 10,00</div>
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background: gold; border-color: gold"> 
+                            <i class="far fa-edit"></i>    
+                        </a>
+                        <a href="#" class="btn btn-primary" style="background: red; border-color: red"> 
+                            <i class="far fa-trash-alt"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="col">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="Images/designer.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Designer UI/UX PL</h5>
+                        <p class="card-text">
+                            <h6>Descrição:</h6>
+                            <div>
+                                Proficional que goste de trabalhar em um ambiente dinâmico com desenvolvimento de software e que tenha experiencia em desenvolvimento full stak.
+                            </div>    
+                            <br>
+                            <h6>Salário:</h6>
+                            <div>R$ 200,00</div>
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background: gold; border-color: gold"> 
+                                <i class="far fa-edit"></i>    
+                            </a>
+                            <a href="#" class="btn btn-primary" style="background: red; border-color: red"> 
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <!--Card 3-->
+            <div class="col">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="Images/tester.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tester - Estagio</h5>
+                        <p class="card-text">
+                            <h6>Descrição:</h6>
+                            <div>
+                                Proficional que goste de trabalhar em um ambiente dinâmico com desenvolvimento de software e que tenha experiencia em desenvolvimento full stak.
+                            </div>    
+                            <br>
+                            <h6>Salário:</h6>
+                            <div>R$ 2,00</div>
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background: gold; border-color: gold"> 
+                                <i class="far fa-edit"></i>    
+                            </a>
+                            <a href="#" class="btn btn-primary" style="background: red; border-color: red"> 
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Also bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>
