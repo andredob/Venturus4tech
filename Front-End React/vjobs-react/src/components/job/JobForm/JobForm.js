@@ -3,7 +3,6 @@ import axios from 'axios';
 
 class JobForm extends Component{
 
-    
     state = {
         newJob : {}
     }

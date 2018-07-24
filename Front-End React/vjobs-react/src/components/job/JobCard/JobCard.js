@@ -43,7 +43,9 @@ const jobCard = (props) => {
                 <button onClick={props.removeHandler} href="#" className="btn btn-primary" style={{background: "red", borderColor: "red"}}> 
                     <i className="far fa-trash-alt"></i>
                 </button>
-
+                <button onClick={props.jobInfoHendler} href="#" className="btn btn-primary" style={{background: "red", borderColor: "red"}}>
+                    <i class="fas fa-info-circle"></i>
+                </button>
             </div>
         </div>
 

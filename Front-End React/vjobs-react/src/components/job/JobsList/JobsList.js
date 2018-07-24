@@ -55,6 +55,14 @@ class JobsList extends Component{
         console.log(`Editar ${id}`);
     }
 
+    //JobInfo
+    jobInfoHendler = (id) =>{
+        axios.get(`/vagas/${id}/info`)
+            .then()
+            .catch()
+        
+        }
+
     // let vagasEncontradas = (this.state.jobs.legngth === 0) ? carregar vagas : loading (: <- "else")
 
     render() { //Retorna o que eu quero renderizar no meu componente
@@ -68,6 +76,7 @@ class JobsList extends Component{
                                 area={vaga.area}
                                 removeHandler={() => this.jobRemoveHandler(vaga.id, vaga.name)}
                                 editHendler={() => this.jobEditHendler(vaga.id)}
+                                jobInfo={() => this.jobInfoHendler(id)}
                             />
                         </div>
             })
