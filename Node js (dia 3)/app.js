@@ -68,12 +68,8 @@ const Vaga = require('./model/vaga.js');
     //deletar vaga por id
     app.delete('/vagas/delete:id', async (req, res) => {
         try {
-            let id = req.params.id;
-            let vagaId = vagas.find(el => el.id == id);
-            if (vagaId != null) {
-                delete vagaId;
-                return res.status(200).send(`Foi deletado a vaga com ID ${vagaId}`)
-            }
+           let length = vagas,length;
+            
             
         } catch (error) {
             
