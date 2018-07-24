@@ -6,7 +6,13 @@ import registerServiceWorker from './registerServiceWorker';
 
 import axios from 'axios';
 
+import { BrowserRouter } from 'react-router-dom';
+
 axios.defaults.baseURL = 'http://localhost:8080'; //define a url base dele antes de tudo que é a url do servidor
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+, document.getElementById('root'));
 registerServiceWorker();
