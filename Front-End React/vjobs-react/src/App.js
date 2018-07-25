@@ -12,16 +12,13 @@ class App extends Component {
     return (
       <div className="App" >
         <Cabecalho />
-
         <Main>
-          
           <Switch> 
             <Route path='/vagas' component={ Lista }></Route>
             <Route path='/sobre' component={ About }></Route>
             <Route exact path='/' component={ Lista }></Route> {/* o exact serve para não cair em outros urls */}
           </Switch>
         </Main>
-        
       </div>
     );
   }
