@@ -76,7 +76,7 @@ class JobsList extends Component{
                                 area={vaga.area}
                                 removeHandler={() => this.jobRemoveHandler(vaga.id, vaga.name)}
                                 editHendler={() => this.jobEditHendler(vaga.id)}
-                                jobInfo={() => this.jobInfoHendler(id)}
+                                jobInfo={() => this.jobInfoHendler(vaga.id)}
                             />
                         </div>
             })
